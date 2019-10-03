@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Zitro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts{
+    <script src="~/Scripts/beonlogin.js"></script>
+}
+
+<div class="container" style="padding-top: 5rem">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Enter your login information</h3>
+                </div>
+                <div class="panel-body">
+                    <fieldset>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="User" name="user" type="text" autofocus id="txtUser">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Password" name="password" type="password" id="txtPassword">
+                        </div>
+                        <div class="form-group">
+                            <label  id="lblError" style="color: red" hidden></label>
+                        </div>
+                        <!-- Change this to a button or input when using this as a form -->
+                        <button id="btnLogin" class="btn btn-lg btn-success btn-block" onclick="validateUser()">Login</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
